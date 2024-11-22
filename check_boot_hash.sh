@@ -50,7 +50,7 @@ done < "$HASH_FILE"
 
 # If any changes were detected, add a general warning message on the desktop
 if [[ "$changes_detected" == true ]]; then
-    echo "WARNING: Changes detected in the boot partition. See details above." >> "$DESKTOP_WARNING_FILE"
+    echo "WARNING: Changes detected in the boot partition. See details above. This entry was generated on $(date)." >> "$DESKTOP_WARNING_FILE"
 fi
 
 # Update the main hash file with the current hashes for future comparisons
